@@ -44,7 +44,7 @@ const theme = extendTheme({
     amber: {
       400: '#d97706',
     },
-    background: '#C5E4F3', // Light blue background color
+    background: '#C5E4F3', 
   },
   config: {
     initialColorMode: 'light',
@@ -59,7 +59,7 @@ const App = () => {
   const [showSignup, setShowSignup] = useState(false);
 
   const handleLogin = () => {
-    // Perform login authentication logic here
+    // login auth
     setAuthenticated(true);
   };
 
@@ -71,8 +71,8 @@ const App = () => {
     setAuthenticated(false);
   };
   const handleConfirm = () => {
-    // Perform save logic here
-    // You can access the selected values and input data here
+    //save logic 
+    
   };
 
   return (
@@ -313,7 +313,7 @@ const SignupView = ({ onSignup }) => {
 
   const handleSignup = () => {
     onSignup(apartmentNo);
-    navigation.navigate('Home'); // Navigate to the Home screen
+    navigation.navigate('Home'); 
   };
 
 
